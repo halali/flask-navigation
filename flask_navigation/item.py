@@ -128,7 +128,7 @@ class Item(object):
         return ItemReference(self.endpoint, self.args)
 
 
-class ItemCollection(collections.MutableSequence,
+class ItemCollection(collections.abc.MutableSequence,
                      collections.Iterable):
     """The collection of navigation items.
 
