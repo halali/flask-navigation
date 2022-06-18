@@ -129,7 +129,7 @@ class Item(object):
 
 
 class ItemCollection(collections.abc.MutableSequence,
-                     collections.Iterable):
+                     collections.abc.Iterable):
     """The collection of navigation items.
 
     This collection is a mutable sequence. All items have order index, and
